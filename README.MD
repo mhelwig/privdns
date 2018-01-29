@@ -1,4 +1,4 @@
-# Privdns.py Private IP DNS check
+# Privdns.py - Private IP DNS check
 
 ## What does it do?
 You can use it to check if your nameserver resolves private IPs to external clients. Reverse quering nameservers for private IP addresses might give an result, sometimes unexpectedly leaking infrastructure dominas and ips.
