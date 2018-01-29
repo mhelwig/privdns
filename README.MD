@@ -102,4 +102,4 @@ No, it's slow and not threaded or optimized for speed. It still should be usable
 
 ## Additional notes
 
-I scanned around 30K german and US nameservers for this. It doesn't seem to be a too common problem. Mostly servers belonging to the same companies showed up in the hits, as well as some private routers (mostly broadcom). You can read more on this here: https://www.codemetrix.net/...
+I scanned around 20K german and US nameservers for this. It doesn't seem to be a too common problem. Mostly servers belonging to the same companies showed up in the hits, as well as some private routers (mostly broadcom). You can read more on this here: https://www.codemetrix.net/when-your-dns-leaks-your-infrastructure/
