@@ -1,7 +1,7 @@
 # Privdns.py - Private IP DNS check
 
 ## What does it do?
-You can use it to check if your nameserver resolves private IPs to external clients. Reverse quering nameservers for private IP addresses might give an result, sometimes unexpectedly leaking infrastructure dominas and ips.
+You can use it to check if your nameserver resolves private IPs to external clients. Reverse quering nameservers for private IP addresses might give an result, sometimes unexpectedly leaking infrastructure domains and ips.
 
 It's basically a reverse DNS query in a loop directed at a specific nameserver. You can do the same thing with dig -x but privdns automates some things.
 
@@ -29,8 +29,7 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   --quickcheck, -q      Quick check: Use for batch testing. Scans the first
-                        entries of each private network and returns results in
-                        one line.
+                        entries of each private network.
   --timeout [TIMEOUT], -t [TIMEOUT]
                         Manually adjust timout in seconds. Default is 5
   --max-queries MAX_QUERIES, -m MAX_QUERIES

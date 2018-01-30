@@ -92,7 +92,7 @@ def get_resolver(nameserver):
 
 # argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('--quickcheck', '-q', help='Quick check: Use for batch testing. Scans the first entries of each private network and returns results in one line.', action='store_true')
+parser.add_argument('--quickcheck', '-q', help='Quick check: Use for batch testing. Scans the first entries of each private network.', action='store_true')
 parser.add_argument('--timeout', '-t', help="Manually adjust timout in seconds. Default is 5", nargs="?", type=int, default=5)
 parser.add_argument('--max-queries','-m', help="Maximal number of queries for a network. In quickcheck mode each private network will be called with the first number of ips specified here. Default 15.", type=int, default=15)
 parser.add_argument('nameserver', help="nameserver IP or hostname",nargs="?")
@@ -102,8 +102,8 @@ parser.add_argument('--infile', '-i', help="Read nameservers from here, 1 per li
 args = parser.parse_args()
 
 
-if not args.nameserver and not args.network:
-    print("Please specifiy either nameserver or network")
+if not args.nameserver and not args.infile:
+    print("Please specifiy nameserver or nameserver list")
     parser.print_help()
     exit(0)
 
