@@ -102,6 +102,7 @@ def get_resolver(nameserver):
     resolver.lifetime = args.timeout
     return resolver
 
+
 # argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--quickcheck', '-q', help='Quick check: Use for batch testing. Scans the first entries of each private network.', action='store_true')
