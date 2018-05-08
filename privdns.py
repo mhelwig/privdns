@@ -7,10 +7,16 @@
 #
 
 import ipaddress
-import dns
-import dns.resolver
-import dns.reversename
 import argparse
+import sys
+
+try:
+    import dns
+    import dns.resolver
+    import dns.reversename
+except:
+    print('Please install dns module: pip3 install dnspython')
+    sys.exit(0)
 
 from time import sleep
 
